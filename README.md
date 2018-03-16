@@ -1,4 +1,4 @@
-# RubocopReporting
+# Rubocop Reporting
 
 Rubocop Reporting description
 
