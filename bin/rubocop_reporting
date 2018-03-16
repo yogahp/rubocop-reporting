@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'rubocop_reporting'
+
+csv = RubocopReporting::CSV.new
+csv.generate
