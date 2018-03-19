@@ -1,0 +1,15 @@
+AllCops:
+  TargetRubyVersion: 2.5
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Enabled: true
+  Exclude:
+    - rubocop_reporting.gemspec
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - rubocop_reporting.gemspec
