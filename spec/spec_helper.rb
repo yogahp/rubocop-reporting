@@ -3,6 +3,7 @@
 require 'bundler/setup'
 require 'rubocop_reporting'
 require 'errors/file_not_found'
+require 'errors/file_not_supported'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

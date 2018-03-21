@@ -14,4 +14,10 @@ RSpec.describe RubocopReporting do
     rubocop_reporting = RubocopReporting::CSV.new('path')
     expect { rubocop_reporting.generate }.to raise_error(FileNotFound)
   end
+
+  it do
+    path = "#{Dir.pwd}/spec/files/wrong_file.txt"
+    rubocop_reporting = RubocopReporting::CSV.new(path)
+    expect { rubocop_reporting.generate }.to raise_error(FileNotSupported)
+  end
 end

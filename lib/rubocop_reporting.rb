@@ -17,7 +17,15 @@ module RubocopReporting
         raise FileNotFound
       end
 
+      unless accepted_formats.include? File.extname(@path_to_file)
+        raise FileNotSupported
+      end
+
       puts 'Rubocop reporting has been generated'
+    end
+
+    def accepted_formats
+      ['.json']
     end
   end
 end
