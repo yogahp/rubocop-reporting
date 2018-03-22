@@ -20,4 +20,10 @@ RSpec.describe RubocopReporting do
     rubocop_reporting = RubocopReporting::CSV.new(path)
     expect { rubocop_reporting.generate }.to raise_error(FileNotSupported)
   end
+
+  it do
+    path = "#{Dir.pwd}/spec/files/rubocop_wrong_content.json"
+    rubocop_reporting = RubocopReporting::CSV.new(path)
+    expect { rubocop_reporting.generate }.to raise_error(JSON::ParserError)
+  end
 end
