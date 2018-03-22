@@ -22,9 +22,7 @@ module RubocopReporting
         raise FileNotSupported
       end
 
-      puts JSON.parse(file)
-
-      puts 'Rubocop reporting has been generated'
+      JSON.parse(file)
     end
 
     def accepted_formats
