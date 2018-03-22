@@ -2,5 +2,5 @@
 
 require 'rubocop_reporting'
 
-csv = RubocopReporting::CSV.new
+csv = RubocopReporting::ToCSV.new(ARGV[0])
 csv.generate

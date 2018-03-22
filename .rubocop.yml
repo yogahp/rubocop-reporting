@@ -13,3 +13,4 @@ Metrics/BlockLength:
   Enabled: true
   Exclude:
     - rubocop_reporting.gemspec
+    - spec/rubocop_reporting_spec.rb
